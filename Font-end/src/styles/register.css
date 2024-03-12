@@ -19,7 +19,7 @@ body{
     flex: 1; /* Adjusted to take up the other half of the screen width */
     background-color:#F5F5F5;
     flex-direction: row;
-    padding-left:80px;;
+    padding-left:80px;
   }
   .forumhadding{
     padding-top: 120px;
@@ -42,7 +42,7 @@ body{
   
   .loginimg {
     height: 780px;
-    width: 650px;
+    width: auto;
   }
 
   .forumvalue{
@@ -64,7 +64,8 @@ body{
     top: 333px;
     left: 781px;
     border-radius: 4px;
-
+    padding-left: 10px;
+    padding-right: 10px;
   }
   
   .password{

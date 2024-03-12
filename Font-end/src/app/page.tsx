@@ -1,6 +1,7 @@
 import "./globals.css"
 
 export default function Home() {
+
   return (
     <div>
       <div className="menubar">
@@ -21,7 +22,9 @@ export default function Home() {
             <div className="mb-1"></div>
             <p className="subMsg">Welcome to a revolutionary approach to software modeling,  </p>
             <p className="subMsg">where efficiency reaches new heights.</p>
-            <button className="button-style">Generate Diagram</button>
+            <a href="/class_diagram">
+              <button className="button-style">Generate Diagram</button>
+            </a>
           </div>
           <img className="loginimg" src="/images/stockpic.png" alt="loginpage image" />
         </div>

@@ -32,7 +32,6 @@ def add_user():
         return "Failed to add user"
 
 
-
 @user_blueprint.route('/getall', methods=["GET"])
 def getusers():
     db = initialize_mongodb()
@@ -50,7 +49,6 @@ def getusers():
     return jsonify(documents_list)
 
 
-#delete the user
 @user_blueprint.route('/deleteuser', methods=["DELETE"])
 def deluser():
     db = initialize_mongodb()
@@ -95,5 +93,3 @@ def login():
     else:
         # User not found, login failed
         return jsonify({"error": "User not found"}), 404
-
-

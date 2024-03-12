@@ -57,13 +57,13 @@ body {
 
 .contentContainer {
   display: flex;
-  justify-content: space-between; /* Ensure items are spaced apart */
-  width: 100%; /* Ensure the container takes full width */
+  justify-content: space-between;
+  width: 100%; 
 }
 
 .loginimg {
   height: 750px;
-  width: 650px;
+  width: auto;
   padding-right: 80px;
 }
 
@@ -79,9 +79,8 @@ body {
   font-family: 'Inter', sans-serif;
   font-size: 80px;
   font-weight: 700;
-  line-height: 67px;
   color: #fff; 
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .subMsg{
@@ -124,3 +123,52 @@ body {
 .link:hover {
   text-decoration: underline; 
 }
+
+/* Base styles remain the same */
+
+/* Media query for small screens (phones) */
+@media (max-width: 700px) {
+  /* Adjustments for smaller screens */
+
+  .menubar {
+    padding-top: 20px;
+    position: relative; /* Add relative positioning */
+  }
+
+  .logoimage {
+    margin-left: 20px;
+    height: 100px;
+  }
+
+  .logintext,
+  .headders {
+    margin: 20px;
+    font-size: 16px;
+  }
+
+  .contentContainer {
+    flex-direction: column;
+  }
+
+  .loginimg {
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+
+  .msgheading{
+    font-size: 40px;
+    font-weight: 700;
+    text-align: left;
+  }
+
+  .welcomeText {
+    margin: 20px;
+    text-align: center;
+  }
+
+  .button-style{
+    width: 80%;
+    margin: 20px auto;
+    }
+    }
