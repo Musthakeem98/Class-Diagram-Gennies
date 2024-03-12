@@ -42,7 +42,7 @@ body{
   
   .loginimg {
     height: 780px;
-    width: 650px;
+    width: auto;
   }
 
   .forumvalue{

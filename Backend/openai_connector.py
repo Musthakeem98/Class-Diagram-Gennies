@@ -1,6 +1,6 @@
 import requests
 
-OPENAI_API_KEY = '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'
+OPENAI_API_KEY = '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'
 
 # Endpoint for chat completions
 API_ENDPOINT = 'https://api.openai.com/v1/chat/completions'
