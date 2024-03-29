@@ -3,10 +3,8 @@
 @tailwind utilities;
 
 body {
-  background-color:#1a2359;
-  ;
+  background-color: #1a2359;
 }
-
 
 /* Example specific styles for your components */
 .homepage {
@@ -15,7 +13,7 @@ body {
 
 .menubar {
   padding: 10px;
-  display: flex; 
+  display: flex;
   flex-direction: column;
   justify-content: center;
   padding-top: 50px;
@@ -35,7 +33,7 @@ body {
   color: #98dce9;
   font-family: Inter;
   font-size: 20px;
-  margin-left:20px ;
+  margin-left: 20px;
 }
 .headders {
   float: right;
@@ -45,7 +43,7 @@ body {
   color: #98dce9;
   font-family: Inter;
   font-size: 20px;
-  margin-left:20px ;
+  margin-left: 20px;
 }
 
 .homebody {
@@ -58,7 +56,7 @@ body {
 .contentContainer {
   display: flex;
   justify-content: space-between;
-  width: 100%; 
+  width: 100%;
 }
 
 .loginimg {
@@ -76,15 +74,15 @@ body {
 
 .msgheading {
   color: #050505;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 80px;
   font-weight: 700;
-  color: #fff; 
+  color: #fff;
   margin-bottom: 10px;
 }
 
-.subMsg{
-  font-family: 'Inter', sans-serif;
+.subMsg {
+  font-family: "Inter", sans-serif;
   font-size: 25px;
   font-weight: 400;
   line-height: 24px;
@@ -98,7 +96,7 @@ body {
 .button-style {
   background-color: #98dce9;
   margin-top: 20px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
@@ -110,26 +108,22 @@ body {
   top: 624px;
   left: 146px;
   border-radius: 30px;
-  cursor: pointer; 
+  cursor: pointer;
   color: #1a2359;
 }
 
 .link {
-  text-decoration: none; 
-  color: inherit; 
-  cursor: pointer; 
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }
 
 .link:hover {
-  text-decoration: underline; 
+  text-decoration: underline;
 }
-
-/* Base styles remain the same */
 
 /* Media query for small screens (phones) */
 @media (max-width: 700px) {
-  /* Adjustments for smaller screens */
-
   .menubar {
     padding-top: 20px;
     position: relative; /* Add relative positioning */
@@ -148,6 +142,7 @@ body {
 
   .contentContainer {
     flex-direction: column;
+    margin-top: 30vh;
   }
 
   .loginimg {
@@ -156,7 +151,7 @@ body {
     padding: 0;
   }
 
-  .msgheading{
+  .msgheading {
     font-size: 40px;
     font-weight: 700;
     text-align: left;
@@ -167,8 +162,8 @@ body {
     text-align: center;
   }
 
-  .button-style{
+  .button-style {
     width: 80%;
     margin: 20px auto;
-    }
-    }
+  }
+}
