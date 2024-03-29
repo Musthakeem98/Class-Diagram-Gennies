@@ -1,6 +1,10 @@
 import requests
+import os
+from dotenv import load_dotenv
 
-OPENAI_API_KEY = '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'
+load_dotenv()
+
+OPENAI_API_KEY = os.getenv("OPEN_AI_KEY")
 
 # Endpoint for chat completions
 API_ENDPOINT = 'https://api.openai.com/v1/chat/completions'
