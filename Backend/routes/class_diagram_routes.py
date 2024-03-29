@@ -1,5 +1,5 @@
 import flask
-from prompt_engineer import preprocess_case_study
+from prompt.prompt_engineer import preprocess_case_study
 
 class_diagram_blueprint = flask.Blueprint('class_diagram', __name__)
 

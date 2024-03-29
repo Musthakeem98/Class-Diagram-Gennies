@@ -1,103 +1,103 @@
-body{
-    background-color: #fff;
-  }
-  
-  .logincontainer { 
-    display: flex; 
-    justify-content: center;
-    width: 100%; 
-    height: 100vh;
-  }
-  
-  .piccontainer {
-    flex: 1; /* Adjusted to take up half of the screen width */
-    flex-direction: column;
-    background-color: #1a2359;
-  }
-  
-  .loginform {
-    flex: 1; /* Adjusted to take up the other half of the screen width */
-    background-color:#F5F5F5;
-    flex-direction: row;
-    padding-left:80px;
-  }
-  .forumhadding{
-    padding-top: 120px;
-    font-family: 'Inter', sans-serif;
-    font-size: 32px;
-    font-weight: 600;
-    line-height: 39px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #5D5858;
-    padding-bottom: 10px;
-  }
-  .logoimage {
-    padding-top: 50px;
-    margin-left: 80px;
-    justify-content: left;
-    height: 200px;
-    max-width: 100%;
-  }
-  
-  .loginimg {
-    height: 780px;
-    width: auto;
-  }
+body {
+  background-color: #fff;
+}
 
-  .forumvalue{
-    font-family: 'Inter', sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 24px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #5D5858;
-    padding-bottom: 15px;
-  }
+.logincontainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
 
-  .input-box {
-    border: 1px solid #A4A2A2;
-    color: #5D5858;
-    width: 90%;
-    height: 50px;
-    top: 333px;
-    left: 781px;
-    border-radius: 4px;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  
-  .password{
-    display: flex;
-    justify-content: space-between; 
-  }
+.piccontainer {
+  flex: 1; /* Adjusted to take up half of the screen width */
+  flex-direction: column;
+  background-color: #1a2359;
+}
 
-  .forgotPassword{
-    font-family: 'Inter', sans-serif;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 24px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #5D5858;
-    padding-bottom: 15px;
-    float: right;
-    padding-right: 10%;
-  }
+.loginform {
+  flex: 1; /* Adjusted to take up the other half of the screen width */
+  background-color: #f5f5f5;
+  flex-direction: row;
+  padding-left: 80px;
+}
+.forumhadding {
+  padding-top: 120px;
+  font-family: "Inter", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 39px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #5d5858;
+  padding-bottom: 10px;
+}
+.logoimage {
+  padding-top: 50px;
+  margin-left: 80px;
+  justify-content: left;
+  height: 200px;
+  max-width: 100%;
+}
 
-  .remember {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .left-content {
-    display: flex;
-    align-items: center;
-  }
-  
-  .remember {
+.loginimg {
+  height: 780px;
+  width: auto;
+}
+
+.forumvalue {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #5d5858;
+  padding-bottom: 15px;
+}
+
+.input-box {
+  border: 1px solid #a4a2a2;
+  color: #5d5858;
+  width: 90%;
+  height: 50px;
+  top: 333px;
+  left: 781px;
+  border-radius: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.password {
+  display: flex;
+  justify-content: space-between;
+}
+
+.forgotPassword {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #5d5858;
+  padding-bottom: 15px;
+  float: right;
+  padding-right: 10%;
+}
+
+.remember {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-content {
+  display: flex;
+  align-items: center;
+}
+
+.remember {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -122,7 +122,7 @@ body{
   margin-left: 5px;
 }
 
-.box{
+.box {
   width: 24px;
   height: 26px;
   top: 614px;
@@ -130,9 +130,9 @@ body{
   border-radius: 4px;
   border: 1px solid #000;
 }
-  
-.checkboxlable{
-  font-family: 'Inter', sans-serif;
+
+.checkboxlable {
+  font-family: "Inter", sans-serif;
   font-size: 18px;
   font-weight: 600;
   line-height: 22px;
@@ -140,14 +140,13 @@ body{
   text-align: left;
   padding-left: 15px;
   color: #898787;
-
 }
 
-.regsiterbutton{
+.regsiterbutton {
   background-color: #1a2359;
   justify-content: center;
   align-items: center;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 32px;
   font-weight: 600;
   line-height: 39px;
@@ -158,11 +157,11 @@ body{
   text-align: center; /* Center the text horizontally */
   display: flex; /* Use flexbox */
   justify-content: center; /* Center the text horizontally */
-  align-items: center; 
+  align-items: center;
 }
 
-.noaccount{
-  font-family: 'Inter', sans-serif  ;
+.noaccount {
+  font-family: "Inter", sans-serif;
   font-size: 18px;
   font-weight: 600;
   line-height: 22px;
@@ -171,37 +170,38 @@ body{
   color: #898787;
   padding-right: 10px;
 }
-.siginlink{
-  font-family: 'Inter', sans-serif;
+.siginlink {
+  font-family: "Inter", sans-serif;
   font-size: 20px;
   font-weight: 600;
   line-height: 24px;
   letter-spacing: 0em;
   text-align: left;
-  color: #5D5858;
+  color: #5d5858;
 }
-.center{
+.center {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-bottom: 30px;
 }
 
-.headmsg{
-    font-family: 'Inter', sans-serif;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 22px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #898787;
-    padding-bottom: 50px;
+.headmsg {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #898787;
+  padding-bottom: 50px;
 }
-.Signupbutton{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
+.Signupbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 
-}
+

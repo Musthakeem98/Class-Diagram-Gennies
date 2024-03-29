@@ -13,14 +13,20 @@
     "@emotion/styled": "^11.11.0",
     "@mui/material": "^5.15.12",
     "@mui/types": "^7.2.13",
+    "@uiw/react-md-editor": "^4.0.3",
+    "axios": "^1.6.7",
     "bootstrap": "^5.3.3",
     "material": "^0.9.0",
     "mui": "^0.0.1",
     "next": "14.1.0",
+    "notistack": "^3.0.1",
     "plantuml-encoder": "^1.4.0",
     "react": "^18",
     "react-bootstrap": "^2.10.1",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-router-dom": "^6.22.3",
+    "react-toastify": "^10.0.4",
+    "swr": "^2.2.5"
   },
   "devDependencies": {
     "@types/node": "^20",
@@ -30,6 +36,7 @@
     "eslint": "^8",
     "eslint-config-next": "14.1.0",
     "postcss": "^8",
+    "prettier": "3.2.5",
     "tailwindcss": "^3.3.0",
     "typescript": "^5"
   }

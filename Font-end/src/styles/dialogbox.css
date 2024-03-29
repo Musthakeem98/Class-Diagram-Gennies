@@ -1,44 +1,73 @@
 .dialog-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .dialog-box {
-    background-color: #98dce9;
-    padding: 15px;
-    border-radius: 5px;
-  }
-
-.topic{
-    padding: 60px;
-    font-family: 'Inter', sans-serif;
-    font-size: 32px;
-    color: #1a2359;
-
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.button{
-    background-color: #1a2359;
-    margin-top: 20px;
-    font-family: 'Inter', sans-serif;
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 36px;
-    letter-spacing: 0em;
-    text-align: center;
-    cursor: pointer;
-    width: 370px;
-    height: 54px;
-    top: 624px;
-    left: 146px;
-    border-radius: 30px;
-    cursor: pointer; 
-    color: #98dce9;
+.dialog-box {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  width: 80%; /* Adjust width as needed */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.topic {
+  font-family: "Inter", sans-serif;
+  font-size: 24px; /* Adjust font size as needed */
+  color: #1a2359;
+}
+
+.close-button {
+  background: #1a2359;
+  border: none;
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: center;
+  cursor: pointer;
+  width: auto;
+  height: 54px;
+  border-radius: 10px;
+  color: #fff;
+  padding: 10px;
+}
+
+.generate-button {
+  background-color: #1a2359; /* Adjust color as needed */
+}
+
+.download-button {
+  background-color: #2980b9; /* Adjust color as needed */
+}
+
+.try-again-button {
+  background-color: #27ae60; /* Adjust color as needed */
+}
+
+.image-container {
+  padding-bottom: 20px; /* Adjust padding as needed */
 }

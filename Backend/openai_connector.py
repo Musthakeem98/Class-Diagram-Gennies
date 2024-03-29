@@ -1,11 +1,11 @@
 import requests
 
-OPENAI_API_KEY = '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'
+OPENAI_API_KEY = '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'
 
 # Endpoint for chat completions
 API_ENDPOINT = 'https://api.openai.com/v1/chat/completions'
 
-def generate_class_diagram(prompt):
+def send_openAI(prompt):
     # JSON payload for the request
     payload = {
         "model": "gpt-3.5-turbo",
