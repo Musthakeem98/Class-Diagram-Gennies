@@ -3,4 +3,4 @@ This application suggest the best suite class diagram using OpenAI
 
 
 ## Screen shot of UI
-![Screen](ReadMe_Img/ScreenShot.png "Screen")
+![Screen](ReadMe Img/ScreenShot.png)
