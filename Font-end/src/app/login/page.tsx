@@ -44,14 +44,17 @@ export default function Login() {
         username: userName,
         password: password,
       });
-      console.log("Data posted successfully:", response.data);
+
+      // Assuming these state setters are defined using useState hook
       setUserName("");
       setPassword("");
       setAlertMsg("");
       setAlertEnable(false);
-      setAlertMsg("Successfuly login");
+      setAlertMsg("Successfully logged in");
       setSuccess(true);
-      enqueueSnackbar("🚀 Login Successfuly", {
+
+      // Assuming you're using some kind of notification system (like snackbar) to show success message
+      enqueueSnackbar("🚀 Successfully logged in", {
         autoHideDuration: 2000,
         variant: "success",
         anchorOrigin: {
@@ -59,16 +62,30 @@ export default function Login() {
           horizontal: "right",
         },
       });
+
       setTimeout(() => {
-        router.push("/");
+        router.push("/"); // Assuming you have access to router object
       }, 2000);
+
       return response.data;
     } catch (error) {
-      console.error("Error posting data:", error);
-      throw error; // Optionally, rethrow the error to handle it outside
+      if (error.response && error.response.status === 300) {
+        // Handle user not found error
+        setAlertMsg("User not found");
+        setAlertEnable(true);
+      }
+      if (error.response && error.response.status === 401) {
+        // Handle user not found error
+        setAlertMsg("Invalid username or password");
+        setAlertEnable(true);
+      } else {
+        // Handle other errors
+        console.error("Error posting data:", error);
+        // Optionally, you can rethrow the error to handle it outside
+        throw error;
+      }
     }
   };
-
   return (
     <SnackbarProvider>
       <div>
