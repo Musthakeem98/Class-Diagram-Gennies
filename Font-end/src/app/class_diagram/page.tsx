@@ -21,10 +21,10 @@ export default function FactChecker() {
     setTopic(event.target.value);
   };
 
-  useEffect(() => {
-    // This code will execute when 'umlCode' changes or when the component mounts
-    setShowDialog(true);
-  }, [umlCode]);
+  // useEffect(() => {
+  //   // This code will execute when 'umlCode' changes or when the component mounts
+  //   setShowDialog(true);
+  // }, [umlCode]);
 
   const plantUMLSource = `
   @startuml
@@ -116,6 +116,7 @@ Vehicle o-- Transmission
         },
       });
     } else {
+      setShowDialog(true);
       const responce = sendPostReq();
     }
   };
@@ -132,6 +133,7 @@ Vehicle o-- Transmission
         "Data posted successfully:",
         response.data.plantuml_code.choices[0].message.content
       );
+      console.log("Data is:", response.data);
       setUmlCode(response.data.plantuml_code.choices[0].message.content);
       return response.data; // Optionally, return the data received from the server
     } catch (error) {

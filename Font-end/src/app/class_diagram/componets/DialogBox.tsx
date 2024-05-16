@@ -3,6 +3,8 @@ import plantumlEncoder from "plantuml-encoder";
 import "@/styles/dialogbox.css";
 import { useState } from "react";
 import MarkdownEditor from "./CodeWindow";
+import CancelIcon from "@mui/icons-material/Cancel";
+import axios from "axios";
 
 interface DialogBoxProps {
   closeDialog: (event: React.MouseEvent<HTMLButtonElement>) => void;
@@ -15,6 +17,9 @@ function DialogBox({
   classDiagramTopic,
   plantUmlSrc,
 }: DialogBoxProps) {
+  const [isCodeWinEnable, setCodeWindEnable] = useState(false);
+  const [markDownCode, setCode] = useState("");
+
   const encode = plantumlEncoder.encode(plantUmlSrc);
   const url = `http://www.plantuml.com/plantuml/png/${encode}`;
 
@@ -34,20 +39,36 @@ function DialogBox({
     };
     xhr.send();
   };
-  const [isCodeWinEnable, setCodeWindEnable] = useState(false);
 
-  function generateJavaCode(event: any): void {
-    setCodeWindEnable(true);
-    closeDialog;
-  }
+  const generateJavaCode = async (event: any) => {
+    try {
+      const response = await axios.post(`http://localhost:3005/code`, {
+        plant_uml: plantUmlSrc,
+      });
+      console.log(
+        "Data posted successfully:",
+        response.data.plantuml_code.choices[0].message.content
+      );
 
+      setCodeWindEnable(true);
+      closeDialog;
+      setCode(response.data.plantuml_code.choices[0].message.content);
+      return response.data;
+    } catch (error) {
+      console.error("Error posting data:", error);
+      throw error;
+    }
+  };
+  const closeCodeDialog = () => {
+    setCodeWindEnable(false);
+  };
   return (
     <div className="dialog-overlay">
       <div className="dialog-box">
         <div className="header">
           <h2 className="topic">Class diagram for {classDiagramTopic}</h2>
-          <button className="button" onClick={closeDialog}>
-            <i className="fas fa-times"></i>
+          <button onClick={closeDialog}>
+            <CancelIcon />
           </button>
         </div>
         <div className="image-container">
@@ -65,7 +86,12 @@ function DialogBox({
           </button>
         </div>
       </div>
-      {isCodeWinEnable && <MarkdownEditor />}
+      {isCodeWinEnable && (
+        <MarkdownEditor
+          closeCodeDialog={closeDialog}
+          classDiagramCode={markDownCode}
+        />
+      )}
     </div>
   );
 }

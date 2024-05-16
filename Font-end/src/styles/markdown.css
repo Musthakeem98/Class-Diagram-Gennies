@@ -1,0 +1,11 @@
+.markdown_header {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 10px;
+}
+.markdown_header h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 32px;
+  color: #1a2359;
+}
